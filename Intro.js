@@ -10,7 +10,7 @@ let astronauta; // Declaração do astronauta fora do escopo da função de anim
 async function init() {
     await app.init({ width: screenWidth, height: screenHeight });
     document.body.appendChild(app.view);
-    await PIXI.Assets.load(['sample.png', 'estrela.png', 'et.png', 'homem.png', 'astronauta.png', 'start.png']);
+    await PIXI.Assets.load(['sample.png', 'estrela.png', 'et.png', 'astronauta.png', 'start.png']);
 
     const starsContainer = new PIXI.Container();
     app.stage.addChild(starsContainer);
